@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    label {
+  display: inline-block;
+  width: 200px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: bold;
+}
+textarea {
+  vertical-align: middle;
+  display: inline-block;
+}
+select{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -4px;
+}
+</style>
+<body>
+    <form action="index.html" method="get">
+        <label>Họ và tên:</label><input type="text" name="name"><br>
+        <label>Ngày sinh:</label><input type="date" name="date"><br>
+        <label>Giới tính:</label><input type="radio" name="gender" value="nam"> Nam <input type="radio" name="gender" value="nữ"> Nữ<br>
+        <label>Số điện thoại:</label><input type="tel" name="sđt"><br>
+        <label>Email:</label><input type="email" name="email"><br>
+        <label>Tên công ty:</label><input type="text" name="Tên cty"><br>
+        <label>Vai trò trong công ty:</label>
+        <select name="vai trò" style="width: 250px;">
+            <option value="Giám đốc điều hành">Giám đốc điều hành (CEO)</option>
+            <option value="Nhân viên">Nhân viên</option>
+            <option value="Khác">Khác</option>
+        </select><br>
+        <label>Quy mô công ty:</label>
+        <select name="vai trò" style="width: 150px;">
+            <option value="DN nhỏ">Doanh nghiệp nhỏ</option>
+            <option value="DN lớn">Doanh nghiệp lớn</option>
+            <option value="Khác">Khác</option>
+        </select><br>
+        <label>Nghành nghề công ty:</label><input type="text" name="Ngành cty"><br>
+        <label>Lý do tham gia câu lạc bộ:</label><textarea name="Lý do clb" id="1" cols="30" rows="2"></textarea><br>
+        <label>Kinh nghiệm lãnh đạo:</label><textarea name="Kinh nghiệm lãnh đạo" id="2" cols="30" rows="2"></textarea><br>
+        <label>Mục tiêu khi tham gia câu lạc bộ:</label><textarea name="Mục tiêu" id="3" cols="30" rows="2"></textarea><br>
+        <label>Chương trình sự kiện mong muốn tham gia:</label>
+        <input type="checkbox" name="Networking" value="Có"> Networking
+        <input type="checkbox" name="Workshops" value="Có"> Workshops
+        <input type="checkbox" name="Hội thảo" value="Có"> Hội thảo<br>
+        <label>Đăng ký nhận bản tin</label><input type="checkbox" name="Đăng ký nhận bản tin" value="Có"> Có<br>
+        <input type="submit" value="Đăng ký hội viên">
+    </form>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    label {
+  display: inline-block;
+  width: 200px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: bold;
+}
+textarea {
+  vertical-align: middle;
+  display: inline-block;
+}
+select{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -4px;
+}
+</style>
+<body>
+    <form action="index.html" method="get">
+        <label>Họ và tên: </label><input type="text" name="name"><br>
+        <label>Ngày sinh: </label><input type="date" name="date"><br>
+        <label>Giới tính: </label><input type="radio" name="gender" value="nam"> Nam <input type="radio" name="gender" value="nữ"> Nữ<br>
+        <label>Số căn cước công dân: </label><input type="number" name="cccd"><br>
+        <label>Ngày cấp: </label><input type="date" name="datecccd"><br>
+        <label>Nơi cấp: </label><input type="text" name="placecccd"><br>
+        <label>Số điện thoại: </label><input type="tel" name="sđt"><br>
+        <label>Email: </label><input type="email" name="email"><br>
+        <label>Địa chỉ thường trú: </label><textarea name="địa chỉ thường trú" id="1" cols="30" rows="2"></textarea><br>
+        <label>Địa chỉ tạm trú: </label><textarea name="địa chỉ tạm trú" id="2" cols="30" rows="2"></textarea><br>
+        <label>Loại căn cước công dân: </label></label><input type="radio" name="typecccd" value="new"> Căn cước công dân mới <input type="radio" name="typecccd" value="old"> Căn cước công dân cũ<br>
+        <label>Dân tộc: </label><input type="text" name="Dân tộc"><br>
+        <label>Tôn giáo: </label><input type="text" name="Tôn giáo"><br>
+        <label>Quốc tịch: </label><input type="text" name="Quốc tịch" value="Việt Nam"><br>
+        <label>Họ tên cha/mẹ: </label><input type="text" name="tên cha/mẹ"><br>
+        <label>Số CMND/CCCD của cha/mẹ: </label><input type="number" name="cccd cha/mẹ"><br>
+        <label>Tỉnh/Thành phố:</label>
+        <select name="Tỉnh/Thành phố">
+            <option value="Chọn">Chọn Tỉnh/Thành phố</option>
+            <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+            <option value="Hà Nội">Hà Nội</option>
+            <option value="Khác">Khác</option>
+        </select><br>
+        <input type="submit" value="Gửi thông tin">
+    </form>
+</body>
+</html>

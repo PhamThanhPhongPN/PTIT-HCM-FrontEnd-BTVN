@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    label {
+  display: inline-block;
+  width: 125px;
+  text-align: left;
+  font-weight: bold;
+}
+</style>
+<body>
+    <form action="index.html" method="get">
+        <label>Họ và tên:</label><input type="text" name="name"><br>
+        <label>Email:</label><input type="email" name="email"><br>
+        <label>Ngày sinh:</label><input type="date" name="date"><br>
+        <label>Giới tính:</label><input type="radio" name="gender" value="nam"> Nam <input type="radio" name="gender" value="nữ"> Nữ<br>
+        <label>Số điện thoại:</label><input type="tel" name="sđt"><br>
+        <label>Chuyên nghành:</label><input type="text" name="chuyên ngành"><br>
+        <label>Năm nhập học:</label><input type="number" name="year" size="5"><br>
+        <label>Điểm GPA:</label><input type="number" name="điểm" size="5"><br>
+        <label>Địa chỉ:</label><textarea name="Địa chỉ" id="1" cols="30" rows="2"></textarea><br>
+        <label>Lớp học</label>
+        <select name="Lớp">
+            <option value="1">Lớp 1</option>
+            <option value="2">Lớp 2</option>
+            <option value="3">Lớp 3</option>
+            <option value="Khác">Khác</option>
+        </select><br>
+        <label>Ngày đăng ký học:</label><input type="datetime-local" name="datedk"><br>
+        <input type="submit" value="Gửi thông tin">
+    </form>
+</body>
+</html>
