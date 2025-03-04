@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .head1{
+        background-color: #2a2828;
+        color: white;
+        display: flex;
+        align-items: center; 
+        height: 100px;
+    }
+    .head2{
+        background-color: whitesmoke;
+        display: flex;
+        align-items: center;
+        height: 250px;
+        gap: 20px;
+    }
+    .head3{
+        background-color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 70px;
+    }
+    .Project{
+        background-color: #2a2828;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        color: white;
+        border-radius: 7px;
+        border: 0px;
+        width: 300px;
+        height: 40px;
+    }
+    .img{
+        border-image: url(1.png) 30 round;
+        border-radius: 50%;
+        border: 2px solid black;
+        width: 150px;
+        height: 150px;
+        margin-left: 50px;
+    }
+    #text1{
+        text-align: right;
+        word-spacing: 25px;
+        margin-left: 650px;
+    }
+</style>
+<body>
+    <div class="head1">
+        <h1 style="text-align: left; margin-left: 10px;">Portfolio của TSUBASA</h1>
+        <p id="text1">Home Projects Contact</p>
+    </div>
+    <div class="head2">
+        <img src="1.png" alt="img" class="img">
+        <h3>Xin chào! Tôi là TSUBASA, một nhà phát triển web sáng tạo.</h3>
+    </div>
+    <div style="height: 100px;">
+        <h2>Dự án của tôi</h2>
+        <div style="gap: 20px; display: flex; align-items: center;">
+            <input type="button" class="Project" value="Dự án 1">
+            <input type="button" class="Project" value="Dự án 2">
+            <input type="button" class="Project" value="Dự án 3">
+            <input type="button" class="Project" value="Dự án 4">
+        </div>
+    </div>
+    <div class="head3">
+        <p>Kết nối với tôi trên <b>LinkedIn</b> | <b>GitHub</b></p>
+    </div>
+</body>
+</html>

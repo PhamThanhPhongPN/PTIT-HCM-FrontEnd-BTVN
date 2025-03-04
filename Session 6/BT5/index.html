@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .head1{
+        font-family: Arial, sans-serif;
+        background-color: #2fb11b;
+        color: white;
+        display: flex;
+        align-items: center; 
+        height: 50px;
+    }
+    .head2{
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        text-align: center;
+        height: 300px;
+        gap: 1px;
+    }
+    .head3{
+        background-color: #2a2828;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 60px;
+        margin-top: 10px;
+    }
+    .button{
+        background-color: #2fb11b;
+        color: white;
+        border: 0;
+        border-radius: 7px;
+        width: 100px;
+        height: 30px;
+    }
+    .feature{
+        background-color: gainsboro;
+        height: 50px;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        text-align: center;
+        border: 0px;
+        border-radius: 7px;
+        margin-top: 10px;
+    }
+    #text1{
+        text-align: right;
+        word-spacing: 25px;
+        margin-left: 840px;
+    }
+</style>
+<body>
+    <div class="head1">
+        <p style="margin-left: 10px;">MyLogo</p>
+        <p id="text1">Home About Services Contact</p>
+    </div>
+    <div class="head2">
+        <p style="font-size: 43px; font-weight: bold; line-height: 3px;">Welcome to My Website</p>
+        <p style="line-height: 3px;">We provide the best solutions for your business.</p>
+        <input type="button" class="button" value="Get Started">
+    </div>
+    <div style="display: flex; gap: 10px;">
+        <input type="button" class="feature" value="Feature 1">
+        <input type="button" class="feature" value="Feature 2">
+        <input type="button" class="feature" value="Feature 3">
+    </div>
+    <div class="head3">
+        <p>Contact us: email@example.com</p>
+    </div>
+</body>
+</html>

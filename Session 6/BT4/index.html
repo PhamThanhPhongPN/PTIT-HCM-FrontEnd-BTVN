@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .head1{
+        font-family: Arial, sans-serif;
+        background-color: #2fb11b;
+        text-align: center;
+        color: white;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    .head2{
+        display: flex;
+        height: 480px;
+    }
+    hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc; 
+    width: 900px; 
+    margin: 20px 0; 
+    }
+    .head3{
+        background-color: #2a2828;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 70px;
+    }
+    .Chuyenmuc{
+        background-color: whitesmoke;
+        height: 450px;
+        width: 320px;
+        border: 1px solid gainsboro;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .img{
+        width: 40px;
+        height: 20px;
+    }
+    .link{
+        display: flex;
+        gap: 20px;
+    }
+</style>
+<body>
+    <div class="head1">
+        <div>
+            <h2>My Blog</h2>
+            <div class="link">
+                <a href="">Home</a>
+                <a href="">Categories</a>
+                <a href="">About</a>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex;flex-direction: column;">
+        <div class="head2">
+            <div class="Chuyenmuc">
+                <h2 style="margin-left: 5px;">Chuyên mục</h2>
+                <ul>
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">JAVASCRIPT</a></li>
+                    <li><a href="">HTML</a></li>
+                </ul>
+            </div>
+            <div style="line-height: 3px;">
+                <h2 style="margin-left: 20px;">Bài viết 1</h2>
+                <img src="Js.png" alt="img" style="margin-left: 20px;">
+                <p style="margin-left: 20px;">Đây là nội dung tóm tắt của bài viết 1.</p> 
+                <hr style="margin-left: 20px;">
+                <h2 style="margin-left: 20px;">Bài viết 2</h2>
+                <img src="Js2.png" alt="img" style="margin-left: 20px;">
+                <p style="margin-left: 20px;">Đây là nội dung tóm tắt của bài viết 2.</p> 
+                <hr style="margin-left: 20px;">
+            </div>
+        </div>
+        <div class="head3">
+            <p>Liên hệ: email@example.com</p>
+        </div>
+    </div>
+</body>
+</html>
