@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        .accordion{
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        details{
+            border-bottom: 1px solid gainsboro;
+        }
+        summary{
+            background: #f8f9fa;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            outline: none;
+            list-style: none;
+            transition: background 0.3s;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        summary::after{
+            content: "▼";
+            font-size: 16px;
+            transition: transform 0.3s;
+        }
+        details[open]>summary::after{
+            content: "▲";
+            transform: rotate(180deg);
+        }
+        summary:hover{
+            background: lightblue;
+        }
+        details[open]>summary{
+            background: lightblue;
+        }
+        .accordion-body{
+            padding: 15px;
+            background: white;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<div class="accordion">
+    <details>
+        <summary>Accordion Item #1</summary>
+        <div class="accordion-body">
+            This is the first item's accordion body.
+        </div>
+    </details>
+
+    <details>
+        <summary>Accordion Item #2</summary>
+        <div class="accordion-body">
+            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <span style="color: gray;">.accordion-body</span>, though the transition does limit overflow.
+        </div>
+    </details>
+
+    <details>
+        <summary>Accordion Item #3</summary>
+        <div class="accordion-body">
+            This is the third item's accordion body.
+        </div>
+    </details>
+</div>
+</body>
+</html>
