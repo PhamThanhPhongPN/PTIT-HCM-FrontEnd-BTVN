@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body{
+            background: #fff;
+        }
+        .header-container{
+            background: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        .header-container.logo{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .nav a{
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+        .nav a:hover{
+            text-decoration: underline;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        .content{
+            width: 50%;
+            margin-left: -50px;
+        }
+        .box{
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .box h2{
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .box h3{
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .box p{
+            font-size: 14px;
+            color: #666;
+        }
+        .box a{
+            color: blue;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .box a:hover{
+            text-decoration: underline;
+        }
+        .footer{
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <div class="logo">MY BLOG</div>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Posts</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="box">
+                <h2>Bài viết nổi bật</h2>
+                <h3>Tiêu đề bài viết chính</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut nulla eu lorem tincidunt tristique.</p>
+                <a href="#">Đọc thêm</a>
+            </div>
+            <div class="box">
+                <h2>Các bài viết khác</h2>
+                <h3>Bài viết 1</h3>
+                <p>Lorem ipsum dolor sit amet...</p>
+                <h3>Bài viết 2</h3>
+                <p>Ut nulla eu lorem tincidunt...</p>
+                <h3>Bài viết 3</h3>
+                <p>Consectetur adipiscing elit...</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        © 2023 My Blog. All rights reserved.
+    </div>
+</body>
+</html>

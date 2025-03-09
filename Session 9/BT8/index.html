@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body{
+            background: #fff;
+        }
+        .header-container{
+            background: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        .header-container .logo{
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .nav a{
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+        .nav a:hover{
+            text-decoration: underline;
+        }
+        .hero{
+            text-align: center;
+            padding: 50px 20px;
+            background: #f4f4f4;
+        }
+        .hero h1{
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .hero p{
+            font-size: 16px;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto 20px;
+        }
+        .hero button{
+            background: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .hero button:hover{
+            background: #555;
+        }
+        .featured{
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .featured h2{
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .projects{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .project-box{
+            background: #ddd;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            color: whitesmoke;
+        }
+        .project-label{
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+        }
+        .about{
+            text-align: center;
+            padding: 40px 20px;
+            background: #f4f4f4;
+        }
+        .about h2{
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .about p{
+            font-size: 14px;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .footer{
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <div class="logo">Portfolio Website</div>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="hero">
+        <h1>Welcome to my portfolio website</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id ultrices tellus. Duis tristique nulla ex, nec lobortis risus maximus a.</p>
+        <button>View Portfolio</button>
+    </div>
+    <div class="featured">
+        <h2>Featured Work</h2>
+        <div class="projects">
+            <div>
+                <div class="project-box">150 x 150</div>
+                <p class="project-label">Project 1</p>
+            </div>
+            <div>
+                <div class="project-box">150 x 150</div>
+                <p class="project-label">Project 2</p>
+            </div>
+            <div>
+                <div class="project-box">150 x 150</div>
+                <p class="project-label">Project 3</p>
+            </div>
+            <div>
+                <div class="project-box">150 x 150</div>
+                <p class="project-label">Project 4</p>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id ultrices tellus. Duis tristique nulla ex, nec lobortis risus maximus a. Integer vel arcu euismod, tincidunt felis at, ultricies felis. Ut imperdiet, elit vel venenatis vulputate, tellus nisi tincidunt purus, a tristique velit lacus eget purus.</p>
+    </div>
+    <div class="footer">
+        © 2023 Portfolio Website
+    </div>
+</body>
+</html>

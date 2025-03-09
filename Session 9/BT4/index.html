@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .page{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        height: auto;
+    }
+    .header{
+        background-color: rgb(25, 173, 184);
+        color: white;
+        height: 50px;
+        font-size: large;
+        display: flex;
+        text-align: left;
+        align-items: center;
+        padding-left: 20px;
+        margin: 0;
+    }
+    .sidebar{
+        background-color: lightgreen;
+        color: white;
+        font-size: large;
+        padding-left: 20px;
+        padding-top: 20px;
+        height: 400px;
+        width: 350px;
+        margin: 0;
+    }
+    .content{
+        background-color: red;
+        color: white;
+        font-size: large;
+        padding-left: 20px;
+        padding-top: 20px;
+        height: 400px;
+        width: 900px;
+        margin: 0;
+    }
+    .footer{
+        background-color: violet;
+        color: white;
+        height: 50px;
+        font-size: large;
+        display: flex;
+        text-align: left;
+        align-items: center;
+        padding-left: 20px;
+        margin: 0;
+    }
+    .text{
+        margin-left: 20px;
+    }
+</style>
+<body>
+    <div class="page">
+        <p class="header">Header</p>
+        <div style="display: flex; gap: 10px;">
+            <p class="sidebar">Sidebar</p>
+            <p class="content"> Content</p>
+        </div>
+        <p class="footer">Footer</p>
+    </div>
+</body>
+</html>
