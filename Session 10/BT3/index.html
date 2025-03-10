@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: left;
+        justify-content: left;
+        padding-left: 20px;
+        color: gray;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .boxsmall{
+        display: flex;
+        gap: 10px;
+    }
+    .imgbox{
+        position: relative;
+        display: inline-block;
+        height: 300px;
+        width: 500px;
+    }
+    .img1{
+        border-radius: 7px;
+        height: 300px;
+        width: 500px;
+    }
+    .img2{
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+    }
+    .basketball{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: black;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 10px;
+        font-size: 14px;
+        border: 1px solid white;
+    }
+</style>
+<body>
+    <div class="box">
+        <div class="imgbox">
+            <img src="1.png" class="img1">
+            <div class="basketball">Basketball</div>
+        </div>
+        <div class="boxsmall">
+            <img src="2.png" class="img2">
+            <p style="font-weight: bold;color: black;">Jake Will.</p>
+        </div>
+        <p>04 June 2023</p>
+        <h2 style="color: black;">5 Exercises Basketball Players Should<br>Be Using To Develop Strength</h2>
+        <p style="font-size: x-large;">This article was written by Jake Willhoite from<br>Healthlisted.com Strength in basketball isn't all<br>about a massive body mass or ripped muscles.</p>
+    </div>
+</body>
+</html>
