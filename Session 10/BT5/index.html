@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7b988689d5.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+        padding-left: 20px;
+        height: 100%;
+        padding-left: 200px;
+        padding-top: 50px;
+        gap: 20px;
+    }
+    .body{
+        display: flex;
+        gap: 15px;
+        padding-top: 20px;
+    }
+    .smallbody{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .img{
+        border-radius: 7px;
+        width: 250px;
+        height: 190px;
+    }
+    .button{
+        background-color: darkblue;
+        border: 0;
+        border-radius: 15px;
+        color: lightblue;
+        width: 60px;
+        height: 20px;
+        font-weight: bold;
+    }
+    hr{
+        border: none;
+        height: 1px;
+        background-color: white; 
+        width: 900px; 
+        margin: 20px 0; 
+    }
+    .footer{
+        margin-top: 200px;
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        padding-top: 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 40px;
+    }
+</style>
+<body>
+    <div style="background-color: lightblue;">
+        <div class="box">
+            <p style="font-weight: bold;font-size: 30px;">Featured works</p>
+            <div class="body">
+                <img src="1.png" class="img">
+                <div class="smallbody">
+                    <h1 style="font-size: 40px;">Designing Dashboards</h1>
+                    <div style="display: flex;gap: 20px;">
+                        <button class="button">2020</button>
+                        <p style="font-size: 20px;">Dashboard</p>
+                    </div>
+                    <p style="font-size: 20px;">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit<br> 
+                        officia consequat duis enim velit mollit. Exercitation veniam consequat sunt<br>
+                        nostrud amet.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="body">
+                <img src="2.png" class="img">
+                <div class="smallbody">
+                    <h1 style="font-size: 40px;">Vibrant Portraits of 2020</h1>
+                    <div style="display: flex;gap: 20px;">
+                        <button class="button">2018</button>
+                        <p style="font-size: 20px;">Illustration</p>
+                    </div>
+                    <p style="font-size: 20px;">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit<br> 
+                        officia consequat duis enim velit mollit. Exercitation veniam consequat sunt<br>
+                        nostrud amet.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="body">
+                <img src="3.png" class="img">
+                <div class="smallbody">
+                    <h1 style="font-size: 40px;">36 Days of Malayalam type</h1>
+                    <div style="display: flex;gap: 20px;">
+                        <button class="button">2018</button>
+                        <p style="font-size: 20px;">Typography</p>
+                    </div>
+                    <p style="font-size: 20px;">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit<br> 
+                        officia consequat duis enim velit mollit. Exercitation veniam consequat sunt<br>
+                        nostrud amet.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            
+        </div>
+        <div class="footer">
+            <div class="body">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <p style="font-size: 20px;">Copyright &copy2020 All rights reserved</p>
+        </div>
+    </div>
+</body>
+</html>
