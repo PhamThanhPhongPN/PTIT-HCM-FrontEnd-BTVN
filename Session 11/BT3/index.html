@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            padding: 20px;
+            position: relative;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            position: relative;
+        }
+
+        .header {
+            background-color: darkmagenta;
+            height: 250px;
+            width: 100%;
+        }
+
+        .body {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .content {
+            background-color: deeppink;
+            height: 150px;
+            flex: 1;
+            min-width: 100px;
+        }
+
+        .content2 {
+            background-color: deeppink;
+            height: 150px;
+            flex: 1;
+            min-width: 100px;
+        }
+
+        .footer {
+            background-color: lightpink;
+            height: 150px;
+            width: 100%;
+        }
+
+        @media (max-width: 1199px) {
+            .body {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .content {
+                flex: 1 1 calc(50% - 10px);
+            }
+
+            .content2 {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .body {
+                flex-direction: column;
+            }
+
+            .content {
+                flex: none;
+                width: 100%;
+            }
+
+            .content2 {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header"></div>
+        <div class="body">
+            <div class="content"></div>
+            <div class="content"></div>
+            <div class="content"></div>
+            <div class="content"></div>
+        </div>
+        <div class="body">
+            <div class="content2"></div>
+            <div class="content2"></div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            height: 100%;
+            width: 100%;
+            padding: 15px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+        }
+
+        .logo {
+            font-size: 34px;
+            font-weight: bold;
+            color: red;
+        }
+
+        .nav {
+            background-color: darkred;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+        }
+
+        .nav-icon {
+            display: none;
+        }
+
+        .body {
+            display: flex;
+            gap: 15px;
+            width: 100%;
+        }
+
+        .main {
+            background-color: firebrick;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            flex: 2;
+            height: 200px;
+        }
+
+        .aside {
+            background-color: saddlebrown;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            flex: 1;
+            height: 200px;
+        }
+
+        .body2 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            width: 100%;
+        }
+
+        .column {
+            background-color: maroon;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        @media (max-width: 1199px) {
+            .header {
+                flex-direction: row;
+            }
+
+            .body {
+                flex-direction: column;
+            }
+
+            .body2 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 767px) {
+            .header {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .nav {
+                display: none;
+            }
+
+            .nav-icon {
+                display: block;
+                font-size: 24px;
+                color: white;
+                background-color: red;
+                padding: 10px;
+                border-radius: 5px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .body {
+                flex-direction: column;
+            }
+
+            .body2 {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">LOGO</div>
+            <div class="nav">#nav</div>
+            <div class="nav-icon"><i class="fa-solid fa-bars"></i></div>
+        </div>
+
+        <div class="body">
+            <div class="main">#main</div>
+            <div class="aside">#aside</div>
+        </div>
+
+        <div class="body2">
+            <div class="column">.column1</div>
+            <div class="column">.column2</div>
+            <div class="column">.column3</div>
+            <div class="column">.column4</div>
+            <div class="column">.column5</div>
+            <div class="column">.column6</div>
+        </div>
+    </div>
+</body>
+
+</html>

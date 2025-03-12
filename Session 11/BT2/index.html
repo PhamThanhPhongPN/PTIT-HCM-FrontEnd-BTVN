@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        height: 700px;
+    }
+    .blue{
+        width: 100%;
+        height: 100px;
+        background-color: lightblue;
+    }
+    .body{
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        height: 250px;
+    }
+    .pink1{
+        background-color: pink;
+        width: 50%;
+        height: 100%;
+    }
+    .gold1{
+        background-color: gold;
+        width: 50%;
+        height: 100%;
+    }
+    .darkblue{
+        background-color: darkblue;
+        height: 100%;
+        width: 33%;
+    }
+    .pink2{
+        background-color: pink;
+        width: 33%;
+        height: 100%;
+    }
+    .gold2{
+        background-color: gold;
+        width: 33%;
+        height: 100%;
+    }
+    @media screen and (max-width: 1024px){
+        .box{
+            height: 900px;
+        }
+        .body{
+            flex-direction: column;
+            align-items: center;
+            height: 350px;
+        }
+        .pink1{
+            width: 100%;
+            height: 175px;
+        }
+        .gold1{
+            width: 100%;
+            height: 175px;
+        }
+        .pink2{
+            width: 100%;
+            height: 116px;
+        }
+        .gold2{
+            width: 100%;
+            height: 116px;
+        }
+        .darkblue{
+            width: 100%;
+            height: 116px;
+        }
+    }
+</style>
+<body>
+    <div class="box">
+        <div class="blue"></div>
+        <div class="body">
+            <div class="pink1"></div>
+            <div class="gold1"></div>
+        </div>
+        <div class="blue"></div>
+        <div class="body">
+            <div class="darkblue"></div>
+            <div class="pink2"></div>
+            <div class="gold2"></div>
+        </div>
+    </div>
+</body>
+</html>
