@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 400px;
+    }
+    .container h1 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .container p {
+      font-size: 18px;
+      margin: 12px 0 24px;
+    }
+    .logout-btn {
+      background-color: #007bff;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .logout-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body onload="handleAuth()">
+    <div class="container">
+      <h1>Xin chào, <strong id="username">User</strong>! 👋</h1>
+      <p>Chào mừng bạn đến với hệ thống mini!</p>
+      <button class="logout-btn" onclick="logout()">Đăng xuất</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
